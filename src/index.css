@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.josefin {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.numans-regular {
+  font-family: "Numans", sans-serif;
+ 
+}
+
+
+.tooltip {
+  visibility: hidden;
+ 
+  background-color: #00c19459;
+  color: black;
+  text-align: center;
+  border-radius: 6px;
+  padding:10px 15px;
+  position: absolute;
+  z-index: 1;
+  top: -0px;
+  /* Adjust this value to position the tooltip vertically */
+  left: -120px;
+  /* Adjust this value to position the tooltip horizontally */
+}
+
+.tooltip-btn:hover+.tooltip {
+  visibility: visible;
+}
+
+
+
